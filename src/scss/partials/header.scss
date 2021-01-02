@@ -1,0 +1,32 @@
+nav {
+    ul {
+        display: inline;
+        li {
+            display: inline;
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    height: 8rem;
+    justify-content: center;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+

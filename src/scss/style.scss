@@ -1,31 +1,217 @@
-// .test {
-//     font-family: HK Grotesk, sans-serif;
-//     font-weight: 500;
-//     font-size: 55px;
-//     line-height: 1.23;
-//     color: #233143;
-// }
-.nav-test {
-    height: 100px;
+@import "./partials/section.scss";
+@import "./partials/footer.scss";
+@import "./partials/header.scss";
+@import "./partials/button.scss";
+
+.btn-align {
+    position: absolute;
+}
+
+.resume-builder {
+    position: relative;
+    // button {
+    //     display: flex;
+    //     position: absolute;
+    //     justify-content: center;
+    //     bottom: 50%;
+    // }
+}
+
+// Sections
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    min-height: 50vh;
+    background : {
+        image: url("https://cdn-images.zety.com/images/zety/landings/home/jumbotron-1920@1_25x.jpg");
+        size: 100% auto;
+        repeat: no-repeat;
+    }
+}
+
+.jumbotron-title {
+    text-align: center;
+    align-items: center;
+}
+
+.mediabar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    svg {
+        max-width: 10rem;
+        width: 100%;
+    }
 }
 
-.logo-test {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-}
-
-.menu-test {
-    width: 100px;
-    height: 50px;
-    background-color: yellow;
-}
-.test-2 {
-    display: flex;
+.mediabar-item {
+    display: inline-block;
     width: auto;
+    vertical-align: center;
+}
+
+// Trustpilot section
+.trustpilot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.alt-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Text
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+.text-test {
+    max-width: 48rem;
+}
+
+// Benefits
+.benefits {
+    display: flex;
+    max-width: 30%;
+    margin-top: 2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    i {
+        svg {
+            max-height: 2.4rem;
+        }
+    }
+}
+.benefit-text {
+    margin-left: 0.8rem;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+//////////////////////////////////////////
+
+.quote {
+    position: relative;
+    margin-top: 2.4rem;
+    ::after {
+        position: absolute;
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        top: -4rem;
+        left: -4rem;
+        background: url("https://cdn-images.zety.com/images/common/icons/quotes@1_25x.png");
+    }
+}
+
+// .quote:before {
+//     position: absolute;
+//     display: block;
+//     top: -4rem;
+//     left: -4rem;
+//     background: url("https://cdn-images.zety.com/images/common/icons/quotes@1_25x.png");
+
+// }
+
+.flex-row-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.pad-tb-6 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+.align {
+    justify-content: center;
+    align-items: center;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.text-pad {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@mixin margin($className, $pixel, $direc) {
+    $rem: $pixel / 16;
+    .m#{$className}-#{$pixel} {
+        margin-#{$direc}: #{$rem}rem;
+    }
+}
+
+@include margin(t, 28, top);
+@include margin(t, 12, top);
+@include margin(t, 36, top);
+@include margin(b, 16, bottom);
+@include margin(t, 44, top);
+@include margin(r, 3, right);
+@include margin(t, 30, top);
+@include margin(b, 20, bottom);
+@include margin(t, 25, top);
+@include margin(t, 33, top);
+.p-40-45 {
+    padding: {
+        top: 2.9rem;
+        left: 2.75rem;
+        right: 2.75rem;
+    }
+}
+
+.maxw {
+    max-width: 26rem;
+}
+.align-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    padding: {
+        left: 4rem;
+        right: 4rem;
+    }
 }
