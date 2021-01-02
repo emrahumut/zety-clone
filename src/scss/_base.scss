@@ -1,0 +1,50 @@
+// * {
+//     font-family: "HKGroteskRegular";
+//     font-weight: normal;
+//     font-style: normal;
+// }
+body {
+
+    a:focus {
+        border: none;
+        outline: none;
+    }
+    
+    
+    color: #233143;
+    line-height: 1.5;
+    font: {
+        size: 16px;
+        weight: 400;
+        line-weight: 24px;
+        family: "HKGroteskRegular";
+
+        // family: "HK Grotesk", sans-serif;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+        line-height: 1.23;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.625rem;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+
+    .h5 {
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+
+    .h3 {
+        font-size: 1.625rem;
+        font-weight: 600;
+    }
+}
