@@ -1,32 +1,167 @@
-nav {
-    ul {
-        display: inline;
-        li {
-            display: inline;
-        }
-    }
-}
-
 .header {
     position: fixed;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     background: #fff;
     height: 8rem;
     justify-content: center;
     width: 100%;
     z-index: 99;
+    font-weight: 500;
 }
 
-.navbar {
+.navbar-wrapper {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: 1.375rem;
+    cursor: pointer;
+    a {
+        // font-size: 16px;
+
+        text-decoration: none;
+    }
 }
 
+.menu-item {
+    display: inline-block;
+    overflow: hidden;
+    // :hover:before {
+    //     z-index: 4;
+    //     border-width: 0.1rem 0.1rem 0;
+    //     border-radius: 0.4rem 0.4rem 0 0;
+    //     content: "";
+    // }
+}
+
+.menu-link {
+    padding: 14px 16px;
+    width: 26.125rem;
+}
+
+.menu a:hover,
+.menu-item:hover .menu-link {
+    // border: 1px solid black;
+    border-bottom: none;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 26.125rem;
+    background-color: white;
+    // min-width: 160px;
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+// .dropdown-content a {
+// }
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.menu-item:hover .dropdown-content {
+    display: block;
+}
+
+.sub-title-builder {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("https://cdn-images.zety.com/images/common/icons/icon-resume-builder@1_25x.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 1.2rem;
+    min-height: 5.1875rem;
+    max-width: 15.625rem;
+    padding: 37px 22px 37px 130px;
+
+    a {
+        display: block;
+        .builder-title {
+            font-size: 1.25rem;
+        }
+        .builder-subtitle {
+            font-size: 0.875rem;
+        }
+    }
+    a:hover {
+        color: #3983fa;
+        background-color: inherit;
+        transition: color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0ms;
+    }
+}
+
+.coverletter-bg {
+    background-image: url("https://cdn-images.zety.com/images/common/icons/icon-cover-letter@1_25x.png");
+}
+.post-bg {
+    background-image: url("https://cdn-images.zety.com/images/common/icons/icon-career-course@1_25x.png");
+}
+
+.builder-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.sub-menu {
+    background-color: #f1f8fe;
+
+    .sub-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        min-height: 3.8125rem;
+        width: 23.55rem;
+        padding: 0px 15px 11px 25px;
+    }
+    .sub-item:hover,
+    .sub-content a:hover {
+        color: #4f8dfa;
+    }
+
+    .sub-content {
+        display: flex;
+        flex-direction: column;
+        .sub-link {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        span {
+            font-size: 0.75rem;
+        }
+        a {
+            background-color: inherit;
+        }
+    }
+}
+
+.sub-icon {
+    padding-right: 15px;
+    opacity: 0.6;
+}
+
+.sub-icon svg {
+    display: block;
+    width: 1.5rem;
+    height: auto;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0.1rem;
+    transition: stroke 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0ms;
+}
