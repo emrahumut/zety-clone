@@ -5,7 +5,6 @@
     flex-direction: row;
     background: #fff;
     height: 8rem;
-    justify-content: center;
     width: 100%;
     z-index: 99;
     font-weight: 500;
@@ -24,17 +23,24 @@
     background-color: #fff;
     margin-left: auto;
     margin-right: 1.375rem;
+    list-style: none;
     cursor: pointer;
-    a {
-        // font-size: 16px;
-
-        text-decoration: none;
-    }
 }
 
 .menu-item {
     display: inline-block;
     overflow: hidden;
+    // :hover {
+    //     color: #3983fa;
+    // }
+    // :before {
+    //     top: 0.1rem;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     border: 0.1rem solid #d9dfea;
+    //     content: "";
+    // }
     // :hover:before {
     //     z-index: 4;
     //     border-width: 0.1rem 0.1rem 0;
@@ -42,17 +48,60 @@
     //     content: "";
     // }
 }
+// .submenu-wrapper:hover .menu-link:before {
+//     border-top-color: #3983fa;
+//     transform: rotate(180deg);
+// }
+// .submenu-wrapper:before {
+//     border-width: 0.1rem 0.1rem 0 0.1rem;
+//     border-radius: 0.4rem 0.4rem 0 0;
+// }
+// .submenu-wrapper .menu-link:before {
+//     z-index: 3;
+//     top: 50%;
+//     right: 1rem;
+//     width: 0;
+//     height: 0;
+//     border-color: #676b78 transparent transparent;
+//     border-style: solid;
+//     border-width: 0.4rem 0.4rem 0 0.4rem;
+//     margin-top: -0.2rem;
+//     content: "";
+//     transition: transform 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0ms;
+// }
 
 .menu-link {
+    box-sizing: border-box;
+    border: 0.1rem solid #fff;
     padding: 14px 16px;
     width: 26.125rem;
 }
+.menu-link:hover {
+    color: #3983fa;
+}
+// .menu-link:after {
+//     height: 0;
+//     content: attr(data-title);
+//     visibility: hidden;
+// }
+// .menu-item:hover.submenu-wrapper:after {
+//     opacity: 1;
+// }
 
-.menu a:hover,
-.menu-item:hover .menu-link {
-    // border: 1px solid black;
-    border-bottom: none;
-    background-color: white;
+// .submenu-wrapper:after {
+//     position: fixed;
+//     z-index: 1;
+//     top: 0;
+//     right: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     content: "";
+//     transition: opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0ms;
+// }
+
+.menu-link:hover {
+    box-sizing: border-box;
+    border: 0.1rem solid #d9dfea;
 }
 
 .dropdown-content {
@@ -60,21 +109,25 @@
     position: absolute;
     min-width: 26.125rem;
     background-color: white;
-    // min-width: 160px;
-    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 0.1rem solid #d9dfea;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
-
-// .dropdown-content a {
-// }
-
-.dropdown-content a:hover {
-    background-color: #ddd;
 }
 
 .menu-item:hover .dropdown-content {
     display: block;
 }
+
+// .submenu-wrapper:before {
+//     border-width: 0.1rem 0.1rem 0;
+//     border-radius: 0.4rem 0.4rem 0 0;
+// }
+// .submenu-wrapper:hover,
+// .menu-link:before {
+//     border-top-color: #3983fa;
+//     transform: rotate(180deg);
+//     content: "";
+// }
 
 .sub-title-builder {
     display: flex;
@@ -96,6 +149,7 @@
             font-size: 0.875rem;
         }
     }
+
     a:hover {
         color: #3983fa;
         background-color: inherit;
@@ -109,6 +163,9 @@
 .post-bg {
     background-image: url("https://cdn-images.zety.com/images/common/icons/icon-career-course@1_25x.png");
 }
+.about-bg {
+    background-image: url("https://cdn-images.zety.com/images/common/icons/icon-career-course@1_25x.png");
+}
 
 .builder-link {
     display: flex;
@@ -118,7 +175,6 @@
 
 .sub-menu {
     background-color: #f1f8fe;
-
     .sub-item {
         display: flex;
         flex-direction: row;
