@@ -32,23 +32,23 @@
         color: $textColor !important;
     }
 }
-
 // $type,
-//     $textColor,
-//     $bg,
-//     $bg-hover,
-//     $hover-textColor,
-//     $font-size,
-//     $p-rl,
-//     $p-tb,
-//     $border-radius,
-//     $border-color
+// $textColor,
+// $bg,
+// $bg-hover,
+// $hover-textColor,
+// $font-size,
+// $p-tb,
+// $p-rl,
+// $border-radius,
+// $border-color
 
-@include button(big, #fff, #e44747, #d04141, #fff, 18px, 22px,59px,  3.6rem, #e44747);
-@include button(header, #3f87fa, #f1f8fe, #3983fa, #fff, 1rem,15px, 25px,  3.6rem, #3f87fa);
-@include button(bottom, #3f87fa, #fff, #b1d0fd, #3f87fa, 18px,24px, 56px,  3.6rem, #3f87fa);
-@include button(cascade-red, #e44747, #fff, #e44747, #fff, 18px, .7rem,2rem, 3.6rem, #e44747);
-@include button(cascade-blue, #3f87fa, #fff, #3f87fa, #fff, 18px, .7rem,2rem, 3.6rem, #3f87fa);
+@include button(big, #fff, #e44747, #d04141, #fff, 18px, 22px, 59px, 3.6rem, #e44747);
+@include button(header, #3f87fa, #f1f8fe, #3983fa, #fff, 1rem, 15px, 25px, 3.6rem, #3f87fa);
+@include button(bottom, #3f87fa, #fff, #b1d0fd, #3f87fa, 18px, 24px, 56px, 3.6rem, #3f87fa);
+@include button(cascade-red, #e44747, #fff, #e44747, #fff, 18px, 0.7rem, 2rem, 3.6rem, #e44747);
+@include button(cascade-blue, #3f87fa, #fff, #3f87fa, #fff, 18px, 0.7rem, 2rem, 3.6rem, #3f87fa);
+@include button(menu, #fff, #e44747, #d04141, #fff, 16px, 18px, 18px, 0.2rem, #e44747);
 
 .basic-button {
     position: relative;
@@ -61,7 +61,17 @@
         box-shadow 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0ms, color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0ms,
         opacity 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0ms;
 }
-
+.menu-button {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-height: 100% !important;
+}
+.button-menu {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
 .cascade-red {
     margin-top: 28px;
     border: 3px solid #e44747;
