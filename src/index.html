@@ -5,124 +5,557 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zety</title>
-    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/hk-grotesk" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
-
     <!-- Header and Navbar -->
     <header class="header">
-        <div class="container">
-            <div class="navbar">
-                <!-- Logo -->
-                <a href="#">
-                    <svg class="logo" width="70" height="34" viewBox="0 0 461 227">
-                        <defs>
-                            <linearGradient id="b" x1="45.207%" x2="45.207%" y1="0%" y2="44.814%">
-                                <stop offset="0%" stop-color="#FFF" stop-opacity=".2"></stop>
-                                <stop offset="100%" stop-color="#FFF" stop-opacity="0"></stop>
-                            </linearGradient>
-                            <path id="a" d="M75.514 86.473L0 43.493 75.514.513l75.514 42.98v85.96l-75.514-42.98z"></path>
-                            <linearGradient id="d" x1="50%" x2="25.242%" y1="67.92%" y2="62.042%">
-                                <stop offset="0%" stop-opacity="0"></stop>
-                                <stop offset="100%"></stop>
-                            </linearGradient>
-                            <path id="c" d="M113.271 91.696l42.98 75.514h-85.96z"></path>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                            <path fill="none" d="M-19-13h500v250H-19z"></path>
-                            <g transform="translate(309.536 .357)">
-                                <use fill="#3983FA" xlink:href="#a"></use>
-                                <use fill="url(#b)" xlink:href="#a"></use>
-                            </g>
-                            <g transform="rotate(90 267.86 284.4)">
-                                <use fill="#0667D0" xlink:href="#c"></use>
-                                <use fill="url(#d)" fill-opacity=".21" xlink:href="#c"></use>
-                            </g>
-                            <path fill="#233143"
-                                d="M77.051 178.868v19.228H.647v-15.062L44.26 131.12H1.76v-19.228h73.857v15.062l-43.614 51.915h45.047zm79.454 17.899c-9.092 2.61-16.555 3.11-25.257 3.11-9.656 0-18.199-1.897-25.627-5.689-7.428-3.792-13.158-9.053-17.19-15.783-4.033-6.73-6.05-14.367-6.05-22.913 0-8.439 1.99-16.05 5.97-22.833 3.979-6.783 9.444-12.07 16.395-15.863 6.95-3.792 14.723-5.688 23.319-5.688 8.383 0 15.97 1.816 22.762 5.448 6.791 3.632 12.124 8.84 15.997 15.622 3.873 6.784 5.81 14.662 5.81 23.635 0 .32-.16 2.563-.478 6.73h-64.784c1.167 5.34 3.926 9.56 8.277 12.658 4.351 3.098 9.932 4.67 16.4 4.901 3.953.142 14.305 0 24.456-2.714v19.379zm-28.281-66.752c-5.624 0-10.346 1.53-14.167 4.588-3.82 3.059-6.154 7.239-7.003 12.54h42.181c-.849-5.2-3.183-9.354-7.004-12.463-3.82-3.11-8.489-4.665-14.007-4.665zm102.197 69.363h-9.682c-10.188 0-18.067-2.617-23.638-7.851-5.57-5.235-8.356-12.926-8.356-23.074V131.12H177.36v-19.815h11.402l-.018-28.27h24.83v28.857h16.846v19.228h-16.845v35.883c0 3.632.928 6.436 2.785 8.412 1.857 1.977 4.484 3.48 7.88 3.48h6.18v20.484zm105.967-87.487l-38.68 87.166c-3.926 9.934-8.781 16.931-14.564 20.99-5.784 4.06-12.76 6.09-20.932 6.09H244.143v-20.19H261.416c3.396 0 6.155-.828 8.277-2.484 2.123-1.655 4.033-4.406 5.73-8.252l.319-.8-37.088-82.52h25.627l24.036 57.123 24.194-57.123h23.877z">
-                            </path>
+        <div class="container navbar-wrapper">
+
+            <!-- Logo -->
+            <a href="#">
+                <svg class="logo" width="70" height="34" viewBox="0 0 461 227">
+                    <defs>
+                        <linearGradient id="b" x1="45.207%" x2="45.207%" y1="0%" y2="44.814%">
+                            <stop offset="0%" stop-color="#FFF" stop-opacity=".2"></stop>
+                            <stop offset="100%" stop-color="#FFF" stop-opacity="0"></stop>
+                        </linearGradient>
+                        <path id="a" d="M75.514 86.473L0 43.493 75.514.513l75.514 42.98v85.96l-75.514-42.98z"></path>
+                        <linearGradient id="d" x1="50%" x2="25.242%" y1="67.92%" y2="62.042%">
+                            <stop offset="0%" stop-opacity="0"></stop>
+                            <stop offset="100%"></stop>
+                        </linearGradient>
+                        <path id="c" d="M113.271 91.696l42.98 75.514h-85.96z"></path>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="none" d="M-19-13h500v250H-19z"></path>
+                        <g transform="translate(309.536 .357)">
+                            <use fill="#3983FA" xlink:href="#a"></use>
+                            <use fill="url(#b)" xlink:href="#a"></use>
                         </g>
-                    </svg>
-                </a>
-                <!-- Dropdown menus and my account button -->
-                <nav class="menu">
-                    <!-- Dropdown menus -->
-                   
-                     <ul class="menu-list">
-                         <li class="menu-item">
-                             <a href="#">
-                                 Tools
-                             </a>
-                             <!-- <div>
-                                   <a href="#">Action</a>
-                                   <a href="#">Another action</a>
-                                   <a href="#">Something else here</a>
-                               </div> -->
-                         </li>
+                        <g transform="rotate(90 267.86 284.4)">
+                            <use fill="#0667D0" xlink:href="#c"></use>
+                            <use fill="url(#d)" fill-opacity=".21" xlink:href="#c"></use>
+                        </g>
+                        <path fill="#233143"
+                            d="M77.051 178.868v19.228H.647v-15.062L44.26 131.12H1.76v-19.228h73.857v15.062l-43.614 51.915h45.047zm79.454 17.899c-9.092 2.61-16.555 3.11-25.257 3.11-9.656 0-18.199-1.897-25.627-5.689-7.428-3.792-13.158-9.053-17.19-15.783-4.033-6.73-6.05-14.367-6.05-22.913 0-8.439 1.99-16.05 5.97-22.833 3.979-6.783 9.444-12.07 16.395-15.863 6.95-3.792 14.723-5.688 23.319-5.688 8.383 0 15.97 1.816 22.762 5.448 6.791 3.632 12.124 8.84 15.997 15.622 3.873 6.784 5.81 14.662 5.81 23.635 0 .32-.16 2.563-.478 6.73h-64.784c1.167 5.34 3.926 9.56 8.277 12.658 4.351 3.098 9.932 4.67 16.4 4.901 3.953.142 14.305 0 24.456-2.714v19.379zm-28.281-66.752c-5.624 0-10.346 1.53-14.167 4.588-3.82 3.059-6.154 7.239-7.003 12.54h42.181c-.849-5.2-3.183-9.354-7.004-12.463-3.82-3.11-8.489-4.665-14.007-4.665zm102.197 69.363h-9.682c-10.188 0-18.067-2.617-23.638-7.851-5.57-5.235-8.356-12.926-8.356-23.074V131.12H177.36v-19.815h11.402l-.018-28.27h24.83v28.857h16.846v19.228h-16.845v35.883c0 3.632.928 6.436 2.785 8.412 1.857 1.977 4.484 3.48 7.88 3.48h6.18v20.484zm105.967-87.487l-38.68 87.166c-3.926 9.934-8.781 16.931-14.564 20.99-5.784 4.06-12.76 6.09-20.932 6.09H244.143v-20.19H261.416c3.396 0 6.155-.828 8.277-2.484 2.123-1.655 4.033-4.406 5.73-8.252l.319-.8-37.088-82.52h25.627l24.036 57.123 24.194-57.123h23.877z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+            <!-- Dropdown menus and my account button -->
+            <ul class="menu">
+                <li class="menu-item">
+                    <span class="menu-link">Tools
+                        <i class="fa fa-caret-down"></i>
+                    </span>
 
-                         <li class="menu-item">
-                             <a href="#">
-                                 Resume
-                             </a>
-                             <!-- <div>
-                                 <a href="#">Action</a>
-                                 <a href="#">Another action</a>
-                                 <a href="#">Something else here</a>
-                             </div> -->
-                         </li>
+                    <div class="dropdown-content">
+                        <div class="sub-title-builder">
+                            <a class="builder-link" href="#">
+                                <span class="builder-title" style="color: #3983FA">Resume <p
+                                        style="display: inline-block; color: #233143;">Builder</p> </span> <br>
+                                <span class="builder-subtitle">Create a new Resume in 5 minutes. Get the job you
+                                    want.</span>
+                            </a>
+                        </div>
 
-                         <li class="menu-item">
-                             <a href="#">
-                                 CV
-                             </a>
-                             <!-- <div>
-                                 <a href="#">Action</a>
-                                 <a href="#">Another action</a>
-                                 <a href="#">Something else here</a>
-                             </div> -->
-                         </li>
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M9 12.75H2.25a1.5 1.5 0 0 1-1.5-1.5v-9a1.5 1.5 0 0 1 1.5-1.5h18a1.5 1.5 0 0 1 1.5 1.5v6M23.25 17.25a6 6 0 1 1-6-6"
+                                            class="a"></path>
+                                        <path
+                                            d="M23.25 12.749l-5.47 5.47a.749.749 0 0 1-1.06 0L15 16.5M5.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M11.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M17.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Cover Letter Builder</a>
+                                    <span>Write a cover letter that convinces employers you're the
+                                        best.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-                         <li class="menu-item">
-                             <a href="#">
-                                 Cover Letter
-                             </a>
-                             <!-- <div>
-                                 <a href="#">Action</a>
-                                 <a href="#">Another action</a>
-                                 <a href="#">Something else here</a>
-                             </div> -->
-                         </li class="menu-item">
+                <li class="menu-item">
+                    <span class="menu-link">Resume
+                        <i class="fa fa-caret-down"></i>
+                    </span>
+                    <div class="dropdown-content">
 
-                         <li class="menu-item">
-                             <a href="#">
-                                 Career Blog
-                             </a>
-                             <!-- <div>
-                                 <a href="#">Action</a>
-                                 <a href="#">Another action</a>
-                                 <a href="#">Something else here</a>
-                             </div> -->
-                         </li>
+                        <div class="sub-title-builder">
+                            <a class="builder-link" href="#">
+                                <span class="builder-title" style="color: #3983FA">Resume <p
+                                        style="display: inline-block; color: #233143;">Builder</p> </span> <br>
+                                <span class="builder-subtitle">Create a new Resume in 5 minutes. Get the job you
+                                    want.</span>
+                            </a>
+                        </div>
 
-                         <li class="menu-item">
-                             <a href="#">
-                                 About
-                             </a>
-                             <!-- <div>
-                                 <a href="#">Action</a>
-                                 <a href="#">Another action</a>
-                                 <a href="#">Something else here</a>
-                             </div> -->
-                         </li>
-                     </ul>
-                
-    
-                    <a href="#" class="basic-button button-header" type="button">MY ACCOUNT</a>
-                </nav>
 
-            </div>
-            
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M9 12.75H2.25a1.5 1.5 0 0 1-1.5-1.5v-9a1.5 1.5 0 0 1 1.5-1.5h18a1.5 1.5 0 0 1 1.5 1.5v6M23.25 17.25a6 6 0 1 1-6-6"
+                                            class="a"></path>
+                                        <path
+                                            d="M23.25 12.749l-5.47 5.47a.749.749 0 0 1-1.06 0L15 16.5M5.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M11.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M17.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Resume Templates</a>
+                                    <span>Find the perfect resume template.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M5.25 2.249h-3a1.5 1.5 0 0 0-1.5 1.5v18a1.5 1.5 0 0 0 1.5 1.5h19.5a1.5 1.5 0 0 0 1.5-1.5v-18a1.5 1.5 0 0 0-1.5-1.5h-10.5"
+                                            class="a"></path>
+                                        <path
+                                            d="M11.25 11.249L8.25 9l-3 2.25V1.5A.75.75 0 0 1 6 .749h4.5a.75.75 0 0 1 .75.75zM5.25 18.749h10.5M5.25 14.249h13.5M18.75 9.749h-4.5"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Resume Examples</a>
+                                    <span>See perfect resume samples that get jobs.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M13.045 18.636l-3.712.53.53-3.712 9.546-9.546a2.25 2.25 0 0 1 3.182 3.182z"
+                                            class="a"></path>
+                                        <rect width="7.5" height="3" x="5.25" y=".749" class="a" rx=".75" ry=".75">
+                                        </rect>
+                                        <path
+                                            d="M12.75 2.249h3a1.5 1.5 0 0 1 1.5 1.5M17.25 18.749v3a1.5 1.5 0 0 1-1.5 1.5H2.25a1.5 1.5 0 0 1-1.5-1.5v-18a1.5 1.5 0 0 1 1.5-1.5h3M5.25 8.249h7.5M5.25 12.749h3"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Resume Format</a>
+                                    <span>Pick the right resume format for your situation.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="5.249" cy="15.75" r="3" class="a"></circle>
+                                        <path
+                                            d="M9.473 23.25a4.474 4.474 0 0 0-8.449 0M21.516 14.589a3 3 0 0 1-5.192 2.927M22.973 23.25a4.474 4.474 0 0 0-8.449 0M21 .75h.75a1.5 1.5 0 0 1 1.5 1.5v8.25a1.5 1.5 0 0 1-1.5 1.5h-4.5l-4.5 4.5V12h-3a1.5 1.5 0 0 1-1.5-1.5V2.25a1.5 1.5 0 0 1 1.5-1.5h1.5M13.874 3.375a1.875 1.875 0 1 1 1.875 1.875"
+                                            class="a"></path>
+                                        <path d="M15.749 8.25a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">How to Write a Resume</a>
+                                    <span>Learn how to make a resume that gets interviews.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="17.25" cy="17.261" r="6" class="a"></circle>
+                                        <path
+                                            d="M15.375 16.136a1.875 1.875 0 1 1 1.875 1.875M17.25 20.261a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M5.25 10.511h5.25M5.25 14.261h3M5.25 18.011h3M9.75 23.261h-7.5a1.5 1.5 0 0 1-1.5-1.5V6.011a1.5 1.5 0 0 1 1.5-1.5H6a3.75 3.75 0 0 1 7.5 0h3.75a1.5 1.5 0 0 1 1.5 1.5v2.25"
+                                            class="a"></path>
+                                        <path d="M9.75 3.761a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375" class="a">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Resume Help</a>
+                                    <span>Improve your resume with help from expert guides.</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <a href="">Create A Resume Now</a>
+                    </div>
+                </li>
+
+                <li class="menu-item">
+                    <span class="menu-link">CV
+                        <i class="fa fa-caret-down"></i>
+                    </span>
+
+
+                    <div class="dropdown-content">
+                        <div class="sub-title-builder">
+                            <a class="builder-link" href="#">
+                                <span class="builder-title" style="color: #3983FA">Resume <p
+                                        style="display: inline-block; color: #233143;">CV</p> </span> <br>
+                                <span class="builder-subtitle">Create a CV in 5 minutes. Get the job you
+                                    want.</span>
+                            </a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M9 12.75H2.25a1.5 1.5 0 0 1-1.5-1.5v-9a1.5 1.5 0 0 1 1.5-1.5h18a1.5 1.5 0 0 1 1.5 1.5v6M23.25 17.25a6 6 0 1 1-6-6"
+                                            class="a"></path>
+                                        <path
+                                            d="M23.25 12.749l-5.47 5.47a.749.749 0 0 1-1.06 0L15 16.5M5.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M11.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M17.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">CV Templates</a>
+                                    <span>Find the perfect CV template.</span>
+                                </div>
+
+                            </li>
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M5.25 2.249h-3a1.5 1.5 0 0 0-1.5 1.5v18a1.5 1.5 0 0 0 1.5 1.5h19.5a1.5 1.5 0 0 0 1.5-1.5v-18a1.5 1.5 0 0 0-1.5-1.5h-10.5"
+                                            class="a"></path>
+                                        <path
+                                            d="M11.25 11.249L8.25 9l-3 2.25V1.5A.75.75 0 0 1 6 .749h4.5a.75.75 0 0 1 .75.75zM5.25 18.749h10.5M5.25 14.249h13.5M18.75 9.749h-4.5"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">CV Examples</a>
+                                    <span>See perfect CV samples that get jobs.</span>
+                                </div>
+                            </li>
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M13.045 18.636l-3.712.53.53-3.712 9.546-9.546a2.25 2.25 0 0 1 3.182 3.182z"
+                                            class="a"></path>
+                                        <rect width="7.5" height="3" x="5.25" y=".749" class="a" rx=".75" ry=".75">
+                                        </rect>
+                                        <path
+                                            d="M12.75 2.249h3a1.5 1.5 0 0 1 1.5 1.5M17.25 18.749v3a1.5 1.5 0 0 1-1.5 1.5H2.25a1.5 1.5 0 0 1-1.5-1.5v-18a1.5 1.5 0 0 1 1.5-1.5h3M5.25 8.249h7.5M5.25 12.749h3"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">CV Format</a>
+                                    <span>Pick the right format for your situation.</span>
+                                </div>
+                            </li>
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="5.249" cy="15.75" r="3" class="a"></circle>
+                                        <path
+                                            d="M9.473 23.25a4.474 4.474 0 0 0-8.449 0M21.516 14.589a3 3 0 0 1-5.192 2.927M22.973 23.25a4.474 4.474 0 0 0-8.449 0M21 .75h.75a1.5 1.5 0 0 1 1.5 1.5v8.25a1.5 1.5 0 0 1-1.5 1.5h-4.5l-4.5 4.5V12h-3a1.5 1.5 0 0 1-1.5-1.5V2.25a1.5 1.5 0 0 1 1.5-1.5h1.5M13.874 3.375a1.875 1.875 0 1 1 1.875 1.875"
+                                            class="a"></path>
+                                        <path d="M15.749 8.25a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">How to Write a CV</a>
+                                    <span>Learn how to make a CV that gets interviews.</span>
+                                </div>
+                            </li>
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="17.25" cy="17.261" r="6" class="a"></circle>
+                                        <path
+                                            d="M15.375 16.136a1.875 1.875 0 1 1 1.875 1.875M17.25 20.261a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M5.25 10.511h5.25M5.25 14.261h3M5.25 18.011h3M9.75 23.261h-7.5a1.5 1.5 0 0 1-1.5-1.5V6.011a1.5 1.5 0 0 1 1.5-1.5H6a3.75 3.75 0 0 1 7.5 0h3.75a1.5 1.5 0 0 1 1.5 1.5v2.25"
+                                            class="a"></path>
+                                        <path d="M9.75 3.761a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375" class="a">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Resume Help</a>
+                                    <span>Improve your resume with help from expert guides.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-item">
+                    <span class="menu-link">Cover Letter
+                        <i class="fa fa-caret-down"></i>
+                    </span>
+
+                    <div class="dropdown-content">
+                        <div class="sub-title-builder coverletter-bg">
+                            <a class="builder-link" href="#">
+                                <span class="builder-title" style="color: #3983FA">Cover Letter <p
+                                        style="display: inline-block; color: #233143;">Builder</p> </span> <br>
+                                <span class="builder-subtitle">Create a new cover in 5 minutes. Get the job you
+                                    want.</span>
+                            </a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M9 12.75H2.25a1.5 1.5 0 0 1-1.5-1.5v-9a1.5 1.5 0 0 1 1.5-1.5h18a1.5 1.5 0 0 1 1.5 1.5v6M23.25 17.25a6 6 0 1 1-6-6"
+                                            class="a"></path>
+                                        <path
+                                            d="M23.25 12.749l-5.47 5.47a.749.749 0 0 1-1.06 0L15 16.5M5.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M11.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375M17.25 6.375a.375.375 0 1 1-.375.375.374.374 0 0 1 .375-.375"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Cover Letter Templates</a>
+                                    <span>Find the perfect cover letter template.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M5.25 2.249h-3a1.5 1.5 0 0 0-1.5 1.5v18a1.5 1.5 0 0 0 1.5 1.5h19.5a1.5 1.5 0 0 0 1.5-1.5v-18a1.5 1.5 0 0 0-1.5-1.5h-10.5"
+                                            class="a"></path>
+                                        <path
+                                            d="M11.25 11.249L8.25 9l-3 2.25V1.5A.75.75 0 0 1 6 .749h4.5a.75.75 0 0 1 .75.75zM5.25 18.749h10.5M5.25 14.249h13.5M18.75 9.749h-4.5"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Cover Letter Examples</a>
+                                    <span>See perfect cover letter samples that get jobs.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M13.045 18.636l-3.712.53.53-3.712 9.546-9.546a2.25 2.25 0 0 1 3.182 3.182z"
+                                            class="a"></path>
+                                        <rect width="7.5" height="3" x="5.25" y=".749" class="a" rx=".75" ry=".75">
+                                        </rect>
+                                        <path
+                                            d="M12.75 2.249h3a1.5 1.5 0 0 1 1.5 1.5M17.25 18.749v3a1.5 1.5 0 0 1-1.5 1.5H2.25a1.5 1.5 0 0 1-1.5-1.5v-18a1.5 1.5 0 0 1 1.5-1.5h3M5.25 8.249h7.5M5.25 12.749h3"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Cover Letter Format</a>
+                                    <span>Pick the right cover letter format for your situation.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="5.249" cy="15.75" r="3" class="a"></circle>
+                                        <path
+                                            d="M9.473 23.25a4.474 4.474 0 0 0-8.449 0M21.516 14.589a3 3 0 0 1-5.192 2.927M22.973 23.25a4.474 4.474 0 0 0-8.449 0M21 .75h.75a1.5 1.5 0 0 1 1.5 1.5v8.25a1.5 1.5 0 0 1-1.5 1.5h-4.5l-4.5 4.5V12h-3a1.5 1.5 0 0 1-1.5-1.5V2.25a1.5 1.5 0 0 1 1.5-1.5h1.5M13.874 3.375a1.875 1.875 0 1 1 1.875 1.875"
+                                            class="a"></path>
+                                        <path d="M15.749 8.25a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">How to Write a Cover Letter</a>
+                                    <span>Learn how to make a cover letter that gets interviews.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="17.25" cy="17.261" r="6" class="a"></circle>
+                                        <path
+                                            d="M15.375 16.136a1.875 1.875 0 1 1 1.875 1.875M17.25 20.261a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M5.25 10.511h5.25M5.25 14.261h3M5.25 18.011h3M9.75 23.261h-7.5a1.5 1.5 0 0 1-1.5-1.5V6.011a1.5 1.5 0 0 1 1.5-1.5H6a3.75 3.75 0 0 1 7.5 0h3.75a1.5 1.5 0 0 1 1.5 1.5v2.25"
+                                            class="a"></path>
+                                        <path d="M9.75 3.761a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375" class="a">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Cover Letter Help</a>
+                                    <span>Boost your chances of having your resume read with our help.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-item">
+                    <span class="menu-link">Career Blog
+                        <i class="fa fa-caret-down"></i>
+                    </span>
+                    <div class="dropdown-content">
+                        <div class="sub-title-builder">
+                            <a class="builder-link" href="#">
+                                <span class="builder-title post-bg" style="color: #3983FA">See All <p
+                                        style="display: inline-block; color: #233143;">Posts</p> </span> <br>
+                                <span class="builder-subtitle">Find out how you can get a new job or improve the one you
+                                    have.</span>
+                            </a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M.611 23.25a6.75 6.75 0 0 1 13.5 0M3.806 8.781a6.848 6.848 0 0 0 4.93 2.094"
+                                            class="a"></path>
+                                        <path
+                                            d="M10.591 13.44a4.125 4.125 0 1 1-3.23-6.69 4.237 4.237 0 0 1 .6.043M20.568 15.14a3.375 3.375 0 0 1-5.984-1.2M17.111 23.25h6a5.25 5.25 0 0 0-5.25-5.25 5.135 5.135 0 0 0-2.12.455"
+                                            class="a"></path>
+                                        <circle cx="15.625" cy="6.014" r="5.25" class="a"></circle>
+                                        <path d="M23.125 13.514L19.361 9.75M7.361 16.5v3" class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Job Search</a>
+                                    <span>Learn how to find the right job and get it.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M12.749 21h1.5v2.25l3-2.25h4.5a1.5 1.5 0 0 0 1.5-1.5V15a1.5 1.5 0 0 0-1.5-1.5h-9a1.5 1.5 0 0 0-1.5 1.5v4.5a1.5 1.5 0 0 0 1.5 1.5z"
+                                            class="a"></path>
+                                        <circle cx="4.973" cy="16.875" r="2.625" class="a"></circle>
+                                        <path d="M9.2 23.25a4.474 4.474 0 0 0-8.449 0" class="a"></path>
+                                        <circle cx="19.024" cy="4.125" r="2.625" class="a"></circle>
+                                        <path
+                                            d="M23.249 10.5a4.474 4.474 0 0 0-8.449 0M16.499 15.75h3.75M14.249 18h6M11.249 8.25h-1.5v2.25l-3-2.25h-4.5a1.5 1.5 0 0 1-1.5-1.5v-4.5a1.5 1.5 0 0 1 1.5-1.5h9a1.5 1.5 0 0 1 1.5 1.5v4.5a1.5 1.5 0 0 1-1.5 1.5zM7.499 3h-3.75M9.749 5.25h-6"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Job Interviews</a>
+                                    <span>Prepare for any interview and ace it.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <path
+                                            d="M.75 9v6M23.25 1.5v21M.75 10.5L23.25 3M.75 13.5l22.5 7.5M5.126 14.959V15A6.71 6.71 0 0 0 17.1 18.949"
+                                            class="a"></path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Career Advice</a>
+                                    <span>Improve your career with expert tips and strategies.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="17.25" cy="17.261" r="6" class="a"></circle>
+                                        <path
+                                            d="M15.375 16.136a1.875 1.875 0 1 1 1.875 1.875M17.25 20.261a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M5.25 10.511h5.25M5.25 14.261h3M5.25 18.011h3M9.75 23.261h-7.5a1.5 1.5 0 0 1-1.5-1.5V6.011a1.5 1.5 0 0 1 1.5-1.5H6a3.75 3.75 0 0 1 7.5 0h3.75a1.5 1.5 0 0 1 1.5 1.5v2.25"
+                                            class="a"></path>
+                                        <path d="M9.75 3.761a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375" class="a">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Resume Help</a>
+                                    <span>Improve your resume with help from expert guides.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="17.25" cy="17.261" r="6" class="a"></circle>
+                                        <path
+                                            d="M15.375 16.136a1.875 1.875 0 1 1 1.875 1.875M17.25 20.261a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M5.25 10.511h5.25M5.25 14.261h3M5.25 18.011h3M9.75 23.261h-7.5a1.5 1.5 0 0 1-1.5-1.5V6.011a1.5 1.5 0 0 1 1.5-1.5H6a3.75 3.75 0 0 1 7.5 0h3.75a1.5 1.5 0 0 1 1.5 1.5v2.25"
+                                            class="a"></path>
+                                        <path d="M9.75 3.761a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375" class="a">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">CV Help</a>
+                                    <span>Improve your CV with help from expert guides.</span>
+                                </div>
+                            </li>
+
+                            <li class="sub-item">
+                                <div class="sub-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <defs></defs>
+                                        <circle cx="17.25" cy="17.261" r="6" class="a"></circle>
+                                        <path
+                                            d="M15.375 16.136a1.875 1.875 0 1 1 1.875 1.875M17.25 20.261a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375M5.25 10.511h5.25M5.25 14.261h3M5.25 18.011h3M9.75 23.261h-7.5a1.5 1.5 0 0 1-1.5-1.5V6.011a1.5 1.5 0 0 1 1.5-1.5H6a3.75 3.75 0 0 1 7.5 0h3.75a1.5 1.5 0 0 1 1.5 1.5v2.25"
+                                            class="a"></path>
+                                        <path d="M9.75 3.761a.375.375 0 1 1-.375.375.375.375 0 0 1 .375-.375" class="a">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="sub-content">
+                                    <a class="sub-link" href="">Cover Letter Help</a>
+                                    <span>Boost your chances of having your resume read with our help.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-item">
+                    <span class="menu-link">About
+                        <!-- <i class="fa fa-caret-down"></i> -->
+                    </span>
+                    <div class="dropdown-content">
+                        <div class="sub-link">
+                            <a href="#">Resume Builder</a>
+                        </div>
+                        <ul>
+                            <li><a href="">Resume Templates</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <a href="#" class="basic-button button-header" type="button">MY ACCOUNT</a>
         </div>
     </header>
     <!-- Sections -->
@@ -263,12 +696,16 @@
     </section>
     <section class="section-medium">
         <div class="container">
-            
+
             <h2 class="text-center">What are the benefits of Zety’s online resume maker?</h2>
-            
+
             <div class="grid-row">
                 <div class="benefits">
-                    <i><svg viewBox="0 0 37 56" style="height: 2rem; width: 2rem;"><path d="M18.5 55.84c-3.34 0-6.42-.84-9.24-2.53a18.27 18.27 0 0 1-9.13-15.9c0-2.45.5-4.8 1.49-7.03a19.01 19.01 0 0 1 4.12-5.95V13.6c0-2.35.57-4.5 1.7-6.43A12.84 12.84 0 0 1 18.5.79a12.84 12.84 0 0 1 11.05 6.38 12.51 12.51 0 0 1 1.71 6.43v10.83a19.01 19.01 0 0 1 4.12 5.95 17.2 17.2 0 0 1 1.49 7.04 18.27 18.27 0 0 1-9.13 15.89 17.69 17.69 0 0 1-9.24 2.53zm9.13-42.24a8.8 8.8 0 0 0-1.24-4.56 9.33 9.33 0 0 0-3.32-3.33 8.8 8.8 0 0 0-4.57-1.24 8.8 8.8 0 0 0-4.56 1.24 9.33 9.33 0 0 0-3.33 3.33 8.8 8.8 0 0 0-1.24 4.56v8.03a17.6 17.6 0 0 1 9.13-2.47c3.3 0 6.34.82 9.13 2.47V13.6zm-9.13 9.24c-2.64 0-5.09.66-7.34 1.98a15.1 15.1 0 0 0-5.37 5.23 14.18 14.18 0 0 0-2.03 7.4c0 2.65.68 5.13 2.04 7.45a14.95 14.95 0 0 0 12.7 7.26c2.64 0 5.1-.66 7.37-1.98a14.45 14.45 0 0 0 5.33-5.28 14.47 14.47 0 0 0 2.04-7.46c0-2.66-.68-5.12-2.04-7.4a14.25 14.25 0 0 0-5.33-5.25 14.58 14.58 0 0 0-7.37-1.95zm1.82 14.19v7.81h-3.64v-7.81a3.72 3.72 0 0 1-1.81-3.25c0-1.02.35-1.88 1.04-2.58.7-.7 1.56-1.04 2.59-1.04 1.03 0 1.89.34 2.59 1.04s1.04 1.56 1.04 2.58a3.71 3.71 0 0 1-1.81 3.25z" style="fill: rgb(0, 153, 255);"></path></svg></i>
+                    <i><svg viewBox="0 0 37 56" style="height: 2rem; width: 2rem;">
+                            <path
+                                d="M18.5 55.84c-3.34 0-6.42-.84-9.24-2.53a18.27 18.27 0 0 1-9.13-15.9c0-2.45.5-4.8 1.49-7.03a19.01 19.01 0 0 1 4.12-5.95V13.6c0-2.35.57-4.5 1.7-6.43A12.84 12.84 0 0 1 18.5.79a12.84 12.84 0 0 1 11.05 6.38 12.51 12.51 0 0 1 1.71 6.43v10.83a19.01 19.01 0 0 1 4.12 5.95 17.2 17.2 0 0 1 1.49 7.04 18.27 18.27 0 0 1-9.13 15.89 17.69 17.69 0 0 1-9.24 2.53zm9.13-42.24a8.8 8.8 0 0 0-1.24-4.56 9.33 9.33 0 0 0-3.32-3.33 8.8 8.8 0 0 0-4.57-1.24 8.8 8.8 0 0 0-4.56 1.24 9.33 9.33 0 0 0-3.33 3.33 8.8 8.8 0 0 0-1.24 4.56v8.03a17.6 17.6 0 0 1 9.13-2.47c3.3 0 6.34.82 9.13 2.47V13.6zm-9.13 9.24c-2.64 0-5.09.66-7.34 1.98a15.1 15.1 0 0 0-5.37 5.23 14.18 14.18 0 0 0-2.03 7.4c0 2.65.68 5.13 2.04 7.45a14.95 14.95 0 0 0 12.7 7.26c2.64 0 5.1-.66 7.37-1.98a14.45 14.45 0 0 0 5.33-5.28 14.47 14.47 0 0 0 2.04-7.46c0-2.66-.68-5.12-2.04-7.4a14.25 14.25 0 0 0-5.33-5.25 14.58 14.58 0 0 0-7.37-1.95zm1.82 14.19v7.81h-3.64v-7.81a3.72 3.72 0 0 1-1.81-3.25c0-1.02.35-1.88 1.04-2.58.7-.7 1.56-1.04 2.59-1.04 1.03 0 1.89.34 2.59 1.04s1.04 1.56 1.04 2.58a3.71 3.71 0 0 1-1.81 3.25z"
+                                style="fill: rgb(0, 153, 255);"></path>
+                        </svg></i>
                     <div class="h5">
                         <h3 class="h5">Cover Letter Builder</h3>
                         <p class="text-left mt-1">Write a cover letter using the same templates as your resume.</p>
@@ -276,7 +713,11 @@
                 </div>
 
                 <div class="benefits">
-                    <i><svg viewBox="0 0 55 56" style="height: 2rem; width: 2rem;"><path d="M55 52.16v3.68H0V.79h3.63v30.19l14.74-8.14 13.09 13.09 21.73-14.91L55 24.66 31.13 41.1 17.82 27.79 3.63 35.6v16.56" style="fill: rgb(0, 153, 255);"></path></svg></i>
+                    <i><svg viewBox="0 0 55 56" style="height: 2rem; width: 2rem;">
+                            <path
+                                d="M55 52.16v3.68H0V.79h3.63v30.19l14.74-8.14 13.09 13.09 21.73-14.91L55 24.66 31.13 41.1 17.82 27.79 3.63 35.6v16.56"
+                                style="fill: rgb(0, 153, 255);"></path>
+                        </svg></i>
                     <div class="benefit-text">
                         <h3 class="h5">20+ Best Resume Templates</h3>
                         <p class="text-left mt-1">Create a modern and professional resume and cover letter.</p>
@@ -284,15 +725,24 @@
                 </div>
 
                 <div class="benefits">
-                    <i><svg viewBox="0 0 55 56" style="height: 2rem; width: 2rem;"><path d="M23.98 28.84L14.85 17a.87.87 0 0 1-.16-.69.93.93 0 0 1 .96-.85c.24 0 .43.05.58.16l11.93 9.13.22.22c.62.56.94 1.3.94 2.26 0 .8-.28 1.5-.83 2.06-.55.57-1.23.86-2.04.86-.95 0-1.7-.37-2.25-1.1l-.22-.22zM27.5.79c4.95 0 9.57 1.26 13.86 3.79a26.97 26.97 0 0 1 9.84 9.85A26.87 26.87 0 0 1 55 28.3c0 4.97-1.26 9.6-3.8 13.89a26.97 26.97 0 0 1-9.84 9.84 26.82 26.82 0 0 1-13.86 3.8c-4.95 0-9.57-1.26-13.86-3.8a26.97 26.97 0 0 1-9.85-9.84A26.92 26.92 0 0 1 0 28.28 27.4 27.4 0 0 1 8.09 8.88l2.36 2.37a22.78 22.78 0 0 0-5.14 7.64 25.06 25.06 0 0 0-1.68 9.4c0 4.59 1.03 8.71 3.08 12.38 2.02 3.6 4.82 6.4 8.41 8.42a24.89 24.89 0 0 0 12.38 3.08c4.58 0 8.7-1.03 12.38-3.08 3.59-2.02 6.4-4.83 8.41-8.42a24.89 24.89 0 0 0 3.08-12.37c0-4.4-1.06-8.5-3.19-12.27a23.44 23.44 0 0 0-8.06-8.55c-3.39-2.15-7-3.22-10.8-3.22v9.46h-3.64V.78h1.82z" style="fill: rgb(0, 153, 255);"></path></svg></i>
+                    <i><svg viewBox="0 0 55 56" style="height: 2rem; width: 2rem;">
+                            <path
+                                d="M23.98 28.84L14.85 17a.87.87 0 0 1-.16-.69.93.93 0 0 1 .96-.85c.24 0 .43.05.58.16l11.93 9.13.22.22c.62.56.94 1.3.94 2.26 0 .8-.28 1.5-.83 2.06-.55.57-1.23.86-2.04.86-.95 0-1.7-.37-2.25-1.1l-.22-.22zM27.5.79c4.95 0 9.57 1.26 13.86 3.79a26.97 26.97 0 0 1 9.84 9.85A26.87 26.87 0 0 1 55 28.3c0 4.97-1.26 9.6-3.8 13.89a26.97 26.97 0 0 1-9.84 9.84 26.82 26.82 0 0 1-13.86 3.8c-4.95 0-9.57-1.26-13.86-3.8a26.97 26.97 0 0 1-9.85-9.84A26.92 26.92 0 0 1 0 28.28 27.4 27.4 0 0 1 8.09 8.88l2.36 2.37a22.78 22.78 0 0 0-5.14 7.64 25.06 25.06 0 0 0-1.68 9.4c0 4.59 1.03 8.71 3.08 12.38 2.02 3.6 4.82 6.4 8.41 8.42a24.89 24.89 0 0 0 12.38 3.08c4.58 0 8.7-1.03 12.38-3.08 3.59-2.02 6.4-4.83 8.41-8.42a24.89 24.89 0 0 0 3.08-12.37c0-4.4-1.06-8.5-3.19-12.27a23.44 23.44 0 0 0-8.06-8.55c-3.39-2.15-7-3.22-10.8-3.22v9.46h-3.64V.78h1.82z"
+                                style="fill: rgb(0, 153, 255);"></path>
+                        </svg></i>
                     <div class="benefit-text">
                         <h3 class="h5">Resume Check</h3>
-                        <p class="text-left mt-1">Our builder will give you suggestions on how to improve your resume.</p>
+                        <p class="text-left mt-1">Our builder will give you suggestions on how to improve your resume.
+                        </p>
                     </div>
                 </div>
 
                 <div class="benefits">
-                    <i><svg viewBox="0 0 55 52" style="height: 2rem; width: 2rem;"><path d="M27.5.66l8.47 16.82L55 20.18l-13.75 13.2 3.24 18.59-16.99-8.8-17 8.8 3.25-18.59L0 20.18l19.03-2.7L27.5.66zm-6.21 19.96L7.31 22.66l10.06 9.9-2.36 13.96 12.48-6.6 12.48 6.6-2.36-13.97 10.07-9.9-13.97-2.03-6.22-12.7-6.21 12.7z" style="fill: rgb(0, 153, 255);"></path></svg></i>
+                    <i><svg viewBox="0 0 55 52" style="height: 2rem; width: 2rem;">
+                            <path
+                                d="M27.5.66l8.47 16.82L55 20.18l-13.75 13.2 3.24 18.59-16.99-8.8-17 8.8 3.25-18.59L0 20.18l19.03-2.7L27.5.66zm-6.21 19.96L7.31 22.66l10.06 9.9-2.36 13.96 12.48-6.6 12.48 6.6-2.36-13.97 10.07-9.9-13.97-2.03-6.22-12.7-6.21 12.7z"
+                                style="fill: rgb(0, 153, 255);"></path>
+                        </svg></i>
                     <div class="benefit-text">
                         <h3 class="h5">Follow Tips From Experts</h3>
                         <p class="text-left mt-1">Our experts' tips will show you how to write a resume.</p>
@@ -300,15 +750,24 @@
                 </div>
 
                 <div class="benefits">
-                    <i><svg viewBox="0 0 37 56" style="height: 2rem; width: 2rem;"><path d="M28.51 40.44c-.55 1.54-1.2 3.6-1.93 6.16a40.89 40.89 0 0 1-1.64 5 6.94 6.94 0 0 1-2.32 3.14 6.96 6.96 0 0 1-4.12 1.1c-1.72 0-3.1-.38-4.13-1.16a7.7 7.7 0 0 1-2.36-3.24c-.4-.95-.96-2.67-1.68-5.14a102 102 0 0 0-1.84-5.86c-.37-1.06-.88-2.3-1.54-3.68L4.91 32.9a68.5 68.5 0 0 1-3.24-6.55A17.8 17.8 0 0 1 .13 19.7c0-3.4.84-6.58 2.53-9.51a18.4 18.4 0 0 1 6.6-6.82A17.6 17.6 0 0 1 18.5.79c3.3 0 6.38.86 9.24 2.58a18.4 18.4 0 0 1 6.6 6.82 18.77 18.77 0 0 1 2.53 9.51c0 1.91-.5 4.1-1.48 6.55a81.61 81.61 0 0 1-3.3 6.66l-2.04 3.85a36.88 36.88 0 0 0-1.54 3.68zm-13.64 9.9c.04.11.1.2.17.27.1.23.27.43.49.61.33.3.7.51 1.1.66a5.9 5.9 0 0 0 1.87.27c.8 0 1.48-.09 2.04-.27.47-.15.86-.37 1.15-.66.18-.18.33-.38.44-.6l.11-.28 2.59-9.24H12.17l2.69 9.24zM18.5 4.47c-2.71 0-5.2.68-7.45 2.04a14.71 14.71 0 0 0-5.34 5.52 15.46 15.46 0 0 0-1.95 7.67c0 1.62.42 3.5 1.27 5.67a49.38 49.38 0 0 0 2.96 6.05 66.19 66.19 0 0 1 2.97 6h15.07c.6-1.33 1.58-3.32 2.97-6a46.6 46.6 0 0 0 2.92-6.1c.8-2.13 1.21-4 1.21-5.62 0-2.78-.64-5.34-1.93-7.67a14.3 14.3 0 0 0-5.22-5.47 14.04 14.04 0 0 0-7.48-2.09z" style="fill: rgb(0, 153, 255);"></path></svg></i>
+                    <i><svg viewBox="0 0 37 56" style="height: 2rem; width: 2rem;">
+                            <path
+                                d="M28.51 40.44c-.55 1.54-1.2 3.6-1.93 6.16a40.89 40.89 0 0 1-1.64 5 6.94 6.94 0 0 1-2.32 3.14 6.96 6.96 0 0 1-4.12 1.1c-1.72 0-3.1-.38-4.13-1.16a7.7 7.7 0 0 1-2.36-3.24c-.4-.95-.96-2.67-1.68-5.14a102 102 0 0 0-1.84-5.86c-.37-1.06-.88-2.3-1.54-3.68L4.91 32.9a68.5 68.5 0 0 1-3.24-6.55A17.8 17.8 0 0 1 .13 19.7c0-3.4.84-6.58 2.53-9.51a18.4 18.4 0 0 1 6.6-6.82A17.6 17.6 0 0 1 18.5.79c3.3 0 6.38.86 9.24 2.58a18.4 18.4 0 0 1 6.6 6.82 18.77 18.77 0 0 1 2.53 9.51c0 1.91-.5 4.1-1.48 6.55a81.61 81.61 0 0 1-3.3 6.66l-2.04 3.85a36.88 36.88 0 0 0-1.54 3.68zm-13.64 9.9c.04.11.1.2.17.27.1.23.27.43.49.61.33.3.7.51 1.1.66a5.9 5.9 0 0 0 1.87.27c.8 0 1.48-.09 2.04-.27.47-.15.86-.37 1.15-.66.18-.18.33-.38.44-.6l.11-.28 2.59-9.24H12.17l2.69 9.24zM18.5 4.47c-2.71 0-5.2.68-7.45 2.04a14.71 14.71 0 0 0-5.34 5.52 15.46 15.46 0 0 0-1.95 7.67c0 1.62.42 3.5 1.27 5.67a49.38 49.38 0 0 0 2.96 6.05 66.19 66.19 0 0 1 2.97 6h15.07c.6-1.33 1.58-3.32 2.97-6a46.6 46.6 0 0 0 2.92-6.1c.8-2.13 1.21-4 1.21-5.62 0-2.78-.64-5.34-1.93-7.67a14.3 14.3 0 0 0-5.22-5.47 14.04 14.04 0 0 0-7.48-2.09z"
+                                style="fill: rgb(0, 153, 255);"></path>
+                        </svg></i>
                     <div class="benefit-text">
                         <h3 class="h5">It's Fast and Easy to Use</h3>
-                        <p class="text-left mt-1">Our online resume builder will help you write a perfect resume in minutes.</p>
+                        <p class="text-left mt-1">Our online resume builder will help you write a perfect resume in
+                            minutes.</p>
                     </div>
                 </div>
 
                 <div class="benefits">
-                    <i><svg viewBox="0 0 45 56" style="height: 2rem; width: 2rem;"><path d="M44.5 55.84H.5V.78h31.13L44.5 13.6v42.24zM31.63 5.4v8.2h8.25l-8.25-8.2zm9.24 11.94H28V4.47H4.13v47.69h36.74V17.34zm-5.61 10.95H9.74v-3.63h25.52v3.63zm0 7.31H9.74v-3.63h25.52v3.63zm0 7.42H9.74v-3.74h25.52v3.74z" style="fill: rgb(0, 153, 255);"></path></svg></i>
+                    <i><svg viewBox="0 0 45 56" style="height: 2rem; width: 2rem;">
+                            <path
+                                d="M44.5 55.84H.5V.78h31.13L44.5 13.6v42.24zM31.63 5.4v8.2h8.25l-8.25-8.2zm9.24 11.94H28V4.47H4.13v47.69h36.74V17.34zm-5.61 10.95H9.74v-3.63h25.52v3.63zm0 7.31H9.74v-3.63h25.52v3.63zm0 7.42H9.74v-3.74h25.52v3.74z"
+                                style="fill: rgb(0, 153, 255);"></path>
+                        </svg></i>
                     <div class="benefit-text">
                         <h3 class="h5">Flexible Text Editor</h3>
                         <p class="text-left mt-1">You will have access to the best text editor available.</p>
@@ -319,7 +778,9 @@
     </section>
 
     <section class="section-small section-column section-bg-blue">
-        <p class="text-center text-test quote">I found an article about how to write a professional resume on Zety. Then I discovered the application. It's useful and simple to use. It's not a free resume builder, but I guess you can't have everything.</p>
+        <p class="text-center text-test quote">I found an article about how to write a professional resume on Zety. Then
+            I discovered the application. It's useful and simple to use. It's not a free resume builder, but I guess you
+            can't have everything.</p>
         <p>Thomas Freeman</p>
     </section>
 
@@ -330,10 +791,13 @@
             <div class="flex-row-nowrap pad-tb-6 align">
                 <div class="text-pad max-width">
                     <h3>Professional CV Templates</h3>
-                    <p class="text-left mt-25">Choose professional, elegant, creative, or modern resume templates. Zety's resume maker offers 18 templates. You can easily change colors and adapt the layout to any resume format you choose: functional, reverse-chronological, or combination.</p>
+                    <p class="text-left mt-25">Choose professional, elegant, creative, or modern resume templates.
+                        Zety's resume maker offers 18 templates. You can easily change colors and adapt the layout to
+                        any resume format you choose: functional, reverse-chronological, or combination.</p>
                 </div>
                 <div class="images">
-                    <img src="https://cdn-images.zety.com/images/zety/landings/home/resumeTemplates@1x.png" width="544" height="326">
+                    <img src="https://cdn-images.zety.com/images/zety/landings/home/resumeTemplates@1x.png" width="544"
+                        height="326">
                 </div>
             </div>
 
@@ -341,10 +805,13 @@
             <div class="flex-row-nowrap pad-tb-6 reverse align">
                 <div class="text-pad max-width">
                     <h3>Tips From Recruiters</h3>
-                    <p class="text-left mt-25">You no longer have to worry about how to make a resume. Our resume generator will guide you through the process of writing each section, step-by-step. Resume writing tips will help you get more job offers.</p>
+                    <p class="text-left mt-25">You no longer have to worry about how to make a resume. Our resume
+                        generator will guide you through the process of writing each section, step-by-step. Resume
+                        writing tips will help you get more job offers.</p>
                 </div>
                 <div class="images">
-                    <img src="https://cdn-images.zety.com/images/zety/landings/home/expert-insights@1x.png" width="460" height="466">
+                    <img src="https://cdn-images.zety.com/images/zety/landings/home/expert-insights@1x.png" width="460"
+                        height="466">
                 </div>
             </div>
 
@@ -355,11 +822,16 @@
                         Edit Your Resume As You Like
                     </h3>
                     <p class="text-left mt-25">
-                        Choose font types, sizes, and spacing. You can bold, italicize, and underline your text. You don't need to use MS Word resume templates: we take care of the formatting, and give you access to the best resume designs you'll ever see.
+                        Choose font types, sizes, and spacing. You can bold, italicize, and underline your text. You
+                        don't need to use MS Word resume templates: we take care of the formatting, and give you access
+                        to the best resume designs you'll ever see.
                     </p>
                 </div>
                 <div class="images">
-                    <img src="https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@1x.png" data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@3x.png" src="https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@1x.png" width="544" height="367">
+                    <img src="https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@1x.png"
+                        data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@3x.png"
+                        src="https://cdn-images.zety.com/images/zety/landings/home/edit-your-resume-as-you-like@1x.png"
+                        width="544" height="367">
                 </div>
             </div>
             <hr>
@@ -369,11 +841,15 @@
                         Cover Letter and Resume Builder
                     </h3>
                     <p class="text-left mt-25">
-                        Create your professional cover letter in just a few simple steps. Use the same template for your cover letter and resume. Convince hiring managers to set up an interview with you.
+                        Create your professional cover letter in just a few simple steps. Use the same template for your
+                        cover letter and resume. Convince hiring managers to set up an interview with you.
                     </p>
                 </div>
                 <div class="images">
-                    <img src="https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@3x.png" data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@3x.png" src="https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@3x.png" alt="Tooltip" width="544" height="326">
+                    <img src="https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@3x.png"
+                        data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@3x.png"
+                        src="https://cdn-images.zety.com/images/zety/landings/home/matchingCoverLetter@3x.png"
+                        alt="Tooltip" width="544" height="326">
                 </div>
             </div>
         </div>
@@ -384,9 +860,13 @@
             <p class="text-center section-subtitle">
                 Download with a single click. Land that dream job.
             </p>
-            
+
             <div class="align-items-center">
-                <img class="image-template" data-loaded="true" data-src="https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@3x.jpg" data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@1_25x.jpg, @2 https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@2x.jpg, @3 https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@3x.jpg" src="https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@3x.jpg" alt="Zety's resume builder" width="1140" height="579">
+                <img class="image-template" data-loaded="true"
+                    data-src="https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@3x.jpg"
+                    data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@1_25x.jpg, @2 https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@2x.jpg, @3 https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@3x.jpg"
+                    src="https://cdn-images.zety.com/images/zety/landings/home/carousel-resume-templates-1093@3x.jpg"
+                    alt="Zety's resume builder" width="1140" height="579">
                 <a href="#" class="basic-button button-big btn-align" type="button">GO TO RESUME BUILDER</a>
             </div>
         </div>
@@ -394,17 +874,24 @@
     <section class="section-medium">
         <div class="container flex-row-nowrap align">
             <div>
-                <img class="plan__image" data-loaded="true" data-src="https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@3x.png" data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@3x.png" src="https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@3x.png" alt="Cascade - professional resume template" width="483" height="683">
+                <img class="plan__image" data-loaded="true"
+                    data-src="https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@3x.png"
+                    data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@3x.png"
+                    src="https://cdn-images.zety.com/images/zety/landings/home/cascade-3-duo-silver-dark-4@3x.png"
+                    alt="Cascade - professional resume template" width="483" height="683">
             </div>
             <div class="text-center text-pad">
                 <h4 class="h3">Cascade template</h4>
-                <h2 class="h5 mt-2 mb-1">Cascade uses a nifty bar graph for your skills and language sections and a sidebar with subtle shading differences.</h2>
-                <h5>You can add, remove, and rearrange the sections and further customize your resume, picking from dozens of color combinations...</h5>
+                <h2 class="h5 mt-2 mb-1">Cascade uses a nifty bar graph for your skills and language sections and a
+                    sidebar with subtle shading differences.</h2>
+                <h5>You can add, remove, and rearrange the sections and further customize your resume, picking from
+                    dozens of color combinations...</h5>
                 <div class="p-40-45 mt-30 mb-20">
                     <h5 class="mt-2 mb-1">Template chosen by</h5>
                     <h2>1,500,000+ users</h2>
                 </div>
-                <a href="#" class="basic-button button-cascade-red mt-25 cascade-red" type="button" class="mt-25">CREATE MY RESUME NOW</a>
+                <a href="#" class="basic-button button-cascade-red mt-25 cascade-red" type="button" class="mt-25">CREATE
+                    MY RESUME NOW</a>
             </div>
         </div>
     </section>
@@ -412,16 +899,24 @@
     <section class="section-medium section-bg-grey">
         <div class="container flex-row-nowrap align">
             <div>
-                <img data-loaded="true" data-src="https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@3x.png" data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@3x.png" src="https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@3x.png" alt="Cascade - professional resume template" width="483" height="683">            </div>
+                <img data-loaded="true"
+                    data-src="https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@3x.png"
+                    data-srcset="@1 https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@1x.png, @2 https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@2x.png, @3 https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@3x.png"
+                    src="https://cdn-images.zety.com/images/zety/landings/home/primo-6-classic-blue-navy-256.png@3x.png"
+                    alt="Cascade - professional resume template" width="483" height="683">
+            </div>
             <div class="text-center text-pad">
                 <h4 class="h3">Primo template</h4>
-                <h2 class="h5 mt-2 mb-1">This template has a modern, upbeat look in the style of an infographic timeline.</h2>
-                <h5>You can add, remove, or rearrange its sections and icons to your liking. Primo uses a side column to help you save space and tiny icons to draw recruiters' attention</h5>
+                <h2 class="h5 mt-2 mb-1">This template has a modern, upbeat look in the style of an infographic
+                    timeline.</h2>
+                <h5>You can add, remove, or rearrange its sections and icons to your liking. Primo uses a side column to
+                    help you save space and tiny icons to draw recruiters' attention</h5>
                 <div class="p-40-45 mt-30 mb-20">
                     <h5 class="mt-2 mb-1">Template cxhosen by</h5>
                     <h2>400,000+ users</h2>
                 </div>
-                <a href="#" class="basic-button button-cascade-blue mt-25 cascade-blue" type="button">CREATE MY RESUME NOW</a>
+                <a href="#" class="basic-button button-cascade-blue mt-25 cascade-blue" type="button">CREATE MY RESUME
+                    NOW</a>
             </div>
         </div>
     </section>
@@ -447,9 +942,21 @@
                 </ul>
                 <div class="footer-sm-wrapper">
                     <ul class="footer-sm-links flex-row-nowrap">
-                        <li><a class="footer-sm-item" href=""><svg class="svg-sm" viewBox="0 0 430.113 430.114"><path d="M158.081 83.3v59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805s5.601-34.721 8.316-72.685H247.54V92.74c0-7.4 9.717-17.354 19.321-17.354h48.557V.001h-66.021C155.878-.004 158.081 72.48 158.081 83.3z"></path></svg></a></li>
-                        <li><a class="footer-sm-item" href=""><svg class="svg-sm" viewBox="0 0 612 612"><path d="M612 116.258a250.714 250.714 0 0 1-72.088 19.772c25.929-15.527 45.777-40.155 55.184-69.411-24.322 14.379-51.169 24.82-79.775 30.48-22.907-24.437-55.49-39.658-91.63-39.658-69.334 0-125.551 56.217-125.551 125.513 0 9.828 1.109 19.427 3.251 28.606-104.326-5.24-196.835-55.223-258.75-131.174-10.823 18.51-16.98 40.078-16.98 63.101 0 43.559 22.181 81.993 55.835 104.479a125.556 125.556 0 0 1-56.867-15.756v1.568c0 60.806 43.291 111.554 100.693 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.199 117.253 87.194-42.947 33.654-97.099 53.655-155.916 53.655-10.134 0-20.116-.612-29.944-1.721 55.567 35.681 121.536 56.485 192.438 56.485 230.948 0 357.188-191.291 357.188-357.188l-.421-16.253c24.666-17.593 46.005-39.697 62.794-64.861z"></path></svg></a></li>
-                        <li><a class="footer-sm-item" href=""><svg class="svg-sm" viewBox="0 0 1792 1792"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"></path></svg></a></li>
+                        <li><a class="footer-sm-item" href=""><svg class="svg-sm" viewBox="0 0 430.113 430.114">
+                                    <path
+                                        d="M158.081 83.3v59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805s5.601-34.721 8.316-72.685H247.54V92.74c0-7.4 9.717-17.354 19.321-17.354h48.557V.001h-66.021C155.878-.004 158.081 72.48 158.081 83.3z">
+                                    </path>
+                                </svg></a></li>
+                        <li><a class="footer-sm-item" href=""><svg class="svg-sm" viewBox="0 0 612 612">
+                                    <path
+                                        d="M612 116.258a250.714 250.714 0 0 1-72.088 19.772c25.929-15.527 45.777-40.155 55.184-69.411-24.322 14.379-51.169 24.82-79.775 30.48-22.907-24.437-55.49-39.658-91.63-39.658-69.334 0-125.551 56.217-125.551 125.513 0 9.828 1.109 19.427 3.251 28.606-104.326-5.24-196.835-55.223-258.75-131.174-10.823 18.51-16.98 40.078-16.98 63.101 0 43.559 22.181 81.993 55.835 104.479a125.556 125.556 0 0 1-56.867-15.756v1.568c0 60.806 43.291 111.554 100.693 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.199 117.253 87.194-42.947 33.654-97.099 53.655-155.916 53.655-10.134 0-20.116-.612-29.944-1.721 55.567 35.681 121.536 56.485 192.438 56.485 230.948 0 357.188-191.291 357.188-357.188l-.421-16.253c24.666-17.593 46.005-39.697 62.794-64.861z">
+                                    </path>
+                                </svg></a></li>
+                        <li><a class="footer-sm-item" href=""><svg class="svg-sm" viewBox="0 0 1792 1792">
+                                    <path
+                                        d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                                    </path>
+                                </svg></a></li>
                     </ul>
                 </div>
             </div>
@@ -469,11 +976,19 @@
                         <li class="lang-item"> <a href="">Français</a></li>
                         <li class="lang-item"> <a href="">Português</a></li>
                     </ul>
-                </div>  
+                </div>
             </div>
             <div class="footer-image">
-                <img class="footer-image-item" data-loaded="true" data-src="https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@3x.png" data-srcset="@1 https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@1x.png, @2 https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@2x.png, @3 https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@3x.png" alt="National Career Development Association" src="https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@3x.png">
-                <img class="footer-image-item" data-loaded="true" data-src="https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@3x.png" data-srcset="@1 https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@1x.png, @2 https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@2x.png, @3 https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@3x.png" alt="Certified Professional Resume Writer Program" src="https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@3x.png">
+                <img class="footer-image-item" data-loaded="true"
+                    data-src="https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@3x.png"
+                    data-srcset="@1 https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@1x.png, @2 https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@2x.png, @3 https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@3x.png"
+                    alt="National Career Development Association"
+                    src="https://cdn-images.zety.com/images/common/landings/all/ncda-logo2020@3x.png">
+                <img class="footer-image-item" data-loaded="true"
+                    data-src="https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@3x.png"
+                    data-srcset="@1 https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@1x.png, @2 https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@2x.png, @3 https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@3x.png"
+                    alt="Certified Professional Resume Writer Program"
+                    src="https://cdn-images.zety.com/images/common/landings/all/parwcc-logo2020@3x.png">
             </div>
         </div>
     </footer>
